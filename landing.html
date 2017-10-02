@@ -71,14 +71,14 @@
         .login-frame {
             box-shadow: 0px 0px 10px #000;
             border-radius: 5px;
-            padding-bottom: 50px;
+            /*padding-bottom: 50px;*/
         }
         
         @media all and (min-device-width: 320px) and (max-device-width: 1366px) {
             .login-frame,
             * [aria-labelledby='hide-on-mobile'] {
                 border-radius: 5px;
-                padding-bottom: 50px;
+                /*padding-bottom: 50px;*/
                 margin: 0 10px 0 10px;
                 border: 0 solid !important
             }
@@ -87,12 +87,15 @@
                 width: 300px;
                 height: 100%;
             }
+            .img {
+                width: 100%;
+            }
         }
 
         .svg-content { 
             display: inline-block;
             position: relative;
-            margin-left: 70px;
+            /*margin-left: 70px;*/
             top: 0;
             width: 
             left: 0;
@@ -102,7 +105,7 @@
         input[type=password] {
             height: 50px;
             background: transparent;
-            border: 1px solid #000000 !important;
+            /*border: 1px solid #000000 !important;*/
             color: #000;
             -webkit-transition: all 0.30s ease-in-out;
             -moz-transition: all 0.30s ease-in-out;
@@ -116,7 +119,7 @@
             box-shadow: 0 0 5px rgba(81, 203, 238, 1);
             padding: 3px 0px 3px 20px;
             margin: 5px 1px 3px 0px;
-            border: 1px solid rgba(81, 203, 238, 1);
+            /*border: 1px solid rgba(81, 203, 238, 1);*/
             background: transparent;
             color: #000;
         }
@@ -140,62 +143,87 @@
             vertical-align: middle; 
             /*overflow: hidden; */
         }
+        
     </style>
 </head>
 
 <body>
-    <div class="app">
-        <div class="padding">
-            <div class="navbar">
-                <div class="pull-center">
-                    <a href="#" class="navbar-brand">
-                        <!-- <div data-ui-include="'images/logo.svg'"></div> -->
-                        <!-- <img src="images/wemu.png" alt="." class=""> -->
-                        <span class="hidden-folded inline">WeMUNIZE</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="col-sm-3 col-md-3 col-lg-3 col-xs-12">                
-                <div class="center-block w-xxl w-auto-xs p-y-md text-center">
-                    <div class="p-a-md login-frame" aria-labelledby="hide-on-mobile">
-                        <form name="form" action="#">
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Email" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" placeholder="password" required>
-                            </div>
-                            <div class="m-b-md">
-                                <label class="md-switch">
-                  					<input type="checkbox"><i class="success"></i> Keep me signed in
-                				</label>
-                            </div>
-                            <button type="submit" class="btn btn-lg btn-block success p-x-lg">Sign in</button>
-                        </form>
-                        <!-- <div class="m-y">
-              				<a href="#" class="_600">Forgot password?</a>
-            			</div>
-            			<div>
-              				Do not have an account? 
-              				<a href="signup.html" class="text-primary _600">Sign up</a>
-            			</div> -->
+    <section class="abs">
+        <div class="row">
+            <div class="padding">
+                <div class="navbar">
+                    <div class="container">
+                        <h2 class="hidden-folded inline">WeMUNIZE - <small style="font-size: 20px;">SOKOTO STATE</small></h2>
+                        <h4>USAID-funded mHealth</h4>
+                        <hr>
                     </div>
-                </div>                
+                </div>
             </div>
-            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                <div class="svg-container">
-                    <div id="map" class="map-content svg-content"></div>
+            <div class="container">
+                <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">                
+                    <div class="center-block  w-auto-xs p-y-md text-center">
+                        <div class="p-a-md login-frame" aria-labelledby="hide-on-mobile">
+                            <form name="form" action="#">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Username" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="password" required>
+                                </div>
+                                <div class="m-b-md">
+                                    <label class="md-switch">
+                      					<input type="checkbox" style="font-size: 12px;"><i class="success"></i> Keep me signed in
+                    				</label>
+                                </div>
+                                <button type="submit" class="btn btn-lg btn-block success p-x-lg">Sign in</button>
+                            </form>
+                            <!-- <div class="m-y">
+                  				<a href="#" class="_600">Forgot password?</a>
+                			</div>
+                			<div>
+                  				Do not have an account? 
+                  				<a href="signup.html" class="text-primary _600">Sign up</a>
+                			</div> -->
+                        </div>
+                    </div>
+
+                    <div class="center-block w-auto-xs p-y-md">
+                        <div class="p-a-md login-frame" aria-labelledby="hide-on-mobile">
+                            <div class="_map-legend">
+                                <span>Source</span>
+                                <hr>
+                                <span><i>*DVD-MT Sokoto 2016</i></span>
+                                <!-- <ul class="win-legend"></ul> -->                                       
+                                <div style="margin-top: 30px; auto; float:none;">
+                                    <hr>
+                                    Let's think through this together. Talk to us! <a href="https://twitter.com/intent/tweet/?text=@BlackSWTech" class="twitter" target="_blank"><i class="fa fa-twitter"></i>Twitter</a>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+                    <div class="svg-container">
+                        <div id="map" class="map-content svg-content"></div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- <div class="container">
-            <div class="pull-center">
-                <img class="img img-responsive" style="display: block; margin: 0 auto;" height="50px" src="images/logo.jpg">
+    </section>
+    <section class="rel">
+        <footer>
+            <div class="_copy">
+                <div class="container">
+                    <div class="row">
+                        <div class="copyright text-center">
+                            <!-- &copy; Black Swan Tech Ltd 2017. All Rights Reserved -->
+                            <img class="img" src="images/logo.jpg" height="50px">
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div> -->
-    </div>
+        </footer>
+    </section>
 
     <!-- jQuery -->
     <script src="libs/jquery/dist/jquery.js"></script>
@@ -273,9 +301,11 @@
     </script>
 
     <script>
+        var source = document.getElementById('map');
+
         var iframe = document.getElementById('map'),
         iframedoc = iframe.contentDocument || iframe.contentWindow.document;
-        iframedoc.body.innerHTML = source, iframeinitialwidth = $('iframe').width();
+        iframedoc.body.innerHTML = source, iframeinitialwidth = $('div').width();
             
         //*BELOW IS THE RESIZE CODE*//
 
@@ -301,14 +331,14 @@
                 //$iframe.height(newHeight);
             });
             var scaleFactor = newWidth/iframeinitialwidth;
-            $('iframe').css({'-webkit-transform': 'scale('+scaleFactor+')', '-webkit-transform-origin': '0 0'});
+            $('div').css({'-webkit-transform': 'scale('+scaleFactor+')', '-webkit-transform-origin': '0 0'});
            
         };
 
         $('.map-content').fitToParent();
 
         $(window).resize(function () {
-            $('.svg-content').fitToParent();
+            $('.map-content').fitToParent();
         });
     </script>
 
