@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Login: WeMunize</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- for ios 7 style, multi-resolution icon of 152x152 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+    <link rel="apple-touch-icon" href="images/logo.png">
+
+    <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" sizes="196x196" href="images/logo.png">
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/animate.css/animate.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/glyphicons/glyphicons.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" type="text/css" /> -->
+    <!-- <link rel="stylesheet" href="css/material-design-icons/material-design-icons.css" type="text/css" /> -->
+    <!-- <link rel="stylesheet" href="css/ionicons/css/ionicons.min.css" type="text/css" /> -->
+    <!-- <link rel="stylesheet" href="css/simple-line-icons/css/simple-line-icons.css" type="text/css" /> -->
+    <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+
+    <!-- build:css css/styles/app.min.css -->
+    <link rel="stylesheet" href="css/styles/app.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="css/styles/style.css" type="text/css" /> -->
+    <!-- endbuild -->
+    <!-- <link rel="stylesheet" href="css/styles/font.css" type="text/css" /> -->
+    <style type="text/css">
+        .style_prevu_kit {
+            -webkit-transition: all 200ms ease-in;
+            -webkit-transform: scale(1);
+            -ms-transition: all 200ms ease-in;
+            -ms-transform: scale(1);
+            -moz-transition: all 200ms ease-in;
+            -moz-transform: scale(1);
+            transition: all 200ms ease-in;
+            transform: scale(1);
+        }
+        
+        .style_prevu_kit:hover {
+            box-shadow: 0px 0px 50px #fff;
+            z-index: 2;
+            -webkit-transition: all 200ms ease-in;
+            -webkit-transform: scale(1.1);
+            -ms-transition: all 200ms ease-in;
+            -ms-transform: scale(1);
+            -moz-transition: all 200ms ease-in;
+            -moz-transform: scale(1.5);
+            transition: all 200ms ease-in;
+            transform: scale(1.1);
+        }
+        
+        body {
+            background: url(images/injection.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        
+        .login-frame {
+            box-shadow: 0px 0px 10px #fff;
+            border-radius: 5px;
+            padding-bottom: 50px;
+        }
+        
+        @media all and (min-device-width: 320px) and (max-device-width: 1366px) {
+            .login-frame,
+            * [aria-labelledby='hide-on-mobile'] {
+                border-radius: 5px;
+                padding-bottom: 50px;
+                margin: 0 10px 0 10px;
+                border: 0 solid !important
+            }
+        }
+        
+        input[type=email],
+        input[type=password] {
+            height: 50px;
+            background: transparent;
+            border: 1px solid #ffffff !important;
+            color: #fff;
+            -webkit-transition: all 0.30s ease-in-out;
+            -moz-transition: all 0.30s ease-in-out;
+            -ms-transition: all 0.30s ease-in-out;
+            -o-transition: all 0.30s ease-in-out;
+            outline: none;
+        }
+        
+        input[type=email]:focus,
+        input[type=password]:focus {
+            box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+            padding: 3px 0px 3px 20px;
+            margin: 5px 1px 3px 0px;
+            border: 1px solid rgba(81, 203, 238, 1);
+            background: transparent;
+            color: #fff;
+        }
+        
+        label {
+            color: #fff;
+        }
+        
+        a:nohover,
+        a:focus {
+            color: transparent;
+            text-decoration: none;
+            cursor: default;
+            !important
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app" id="app">
+        <!-- ############ LAYOUT START-->
+        <div class="padding">
+            <div class="navbar">
+                <div class="pull-center">
+                    <a href="#" class="navbar-brand">
+                        <!-- <div data-ui-include="'images/logo.svg'"></div> -->
+                        <!-- <img src="images/wemu.png" alt="." class=""> -->
+                        <span class="hidden-folded inline text-white">WeMUNIZE</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-t">
+            <div class="center-block w-xxl w-auto-xs p-y-md text-center">
+                <div class="p-a-md style_prevu_kit login-frame" aria-labelledby="hide-on-mobile">
+                    <div>
+                        <a href="#" class="btn btn-block text-white m-b-sm">
+                            <img src="images/wemu.png" width="200px" alt="." class="">
+                        </a>
+                    </div>
+                    <div class="m-y text-sm">
+                        <!-- OR -->&nbsp;
+                    </div>
+                    <form name="form" action="#">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="password" required>
+                        </div>
+                        <div class="m-b-md">
+                            <label class="md-switch">
+              					<input type="checkbox"><i class="success"></i> Keep me signed in
+            				</label>
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-block success p-x-lg">Sign in</button>
+                    </form>
+                    <!-- <div class="m-y">
+          				<a href="#" class="_600">Forgot password?</a>
+        			</div>
+        			<div>
+          				Do not have an account? 
+          				<a href="signup.html" class="text-primary _600">Sign up</a>
+        			</div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- build:js scripts/app.min.js -->
+    <!-- jQuery -->
+    <script src="libs/jquery/dist/jquery.js"></script>
+    <!-- Bootstrap -->
+    <!-- <script src="libs/tether/dist/js/tether.min.js"></script> -->
+    <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- core -->
+    <!-- <script src="libs/jQuery-Storage-API/jquery.storageapi.min.js"></script> -->
+    <!-- <script src="libs/PACE/pace.min.js"></script> -->
+    <!-- <script src="libs/jquery-pjax/jquery.pjax.js"></script> -->
+    <!-- <script src="libs/blockUI/jquery.blockUI.js"></script> -->
+    <!-- <script src="libs/jscroll/jquery.jscroll.min.js"></script> -->
+
+    <!-- <script src="scripts/config.lazyload.js"></script> -->
+    <!-- <script src="scripts/ui-load.js"></script> -->
+    <!-- <script src="scripts/ui-jp.js"></script> -->
+    <!-- <script src="scripts/ui-include.js"></script> -->
+    <!-- <script src="scripts/ui-device.js"></script> -->
+    <!-- <script src="scripts/ui-form.js"></script> -->
+    <!-- <script src="scripts/ui-modal.js"></script> -->
+    <!-- <script src="scripts/ui-nav.js"></script> -->
+    <!-- <script src="scripts/ui-list.js"></script> -->
+    <!-- <script src="scripts/ui-screenfull.js"></script> -->
+    <!-- <script src="scripts/ui-scroll-to.js"></script> -->
+    <!-- <script src="scripts/ui-toggle-class.js"></script> -->
+    <!-- <script src="scripts/ui-taburl.js"></script> -->
+    <!-- <script src="scripts/app.js"></script> -->
+    <!-- <script src="scripts/ajax.js"></script> -->
+    <!-- endbuild -->
+</body>
+
+</html>

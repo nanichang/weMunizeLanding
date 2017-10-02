@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Login: WeMunize</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- for ios 7 style, multi-resolution icon of 152x152 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+    <link rel="apple-touch-icon" href="images/logo.png">
+
+    <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" sizes="196x196" href="images/logo.png">
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/glyphicons/glyphicons.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" type="text/css" /> -->
+    <!-- <link rel="stylesheet" href="css/material-design-icons/material-design-icons.css" type="text/css" /> -->
+    <!-- <link rel="stylesheet" href="css/ionicons/css/ionicons.min.css" type="text/css" /> -->
+    <!-- <link rel="stylesheet" href="css/simple-line-icons/css/simple-line-icons.css" type="text/css" /> -->
+    <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+
+    <!-- build:css css/styles/app.min.css -->
+    <link rel="stylesheet" href="css/styles/app.css" type="text/css" />
+
+    <link type="text/css" rel="stylesheet" href="css/style3.css">
+    <link type="text/css" rel="stylesheet" href="css/customStuff.css">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="css/jquery.smallipop.min.css">
+    <link type="text/css" rel="stylesheet" href="css/jquery.qtip.min.css">
+    <link type="text/css" rel="stylesheet" href="css/jquery.fancybox.css">
+    <style type="text/css">
+        .style_prevu_kit {
+            -webkit-transition: all 200ms ease-in;
+            -webkit-transform: scale(1);
+            -ms-transition: all 200ms ease-in;
+            -ms-transform: scale(1);
+            -moz-transition: all 200ms ease-in;
+            -moz-transform: scale(1);
+            transition: all 200ms ease-in;
+            transform: scale(1);
+        }
+        
+        .style_prevu_kit:hover {
+            box-shadow: 0px 0px 50px #fff;
+            z-index: 2;
+            -webkit-transition: all 200ms ease-in;
+            -webkit-transform: scale(1.1);
+            -ms-transition: all 200ms ease-in;
+            -ms-transform: scale(1);
+            -moz-transition: all 200ms ease-in;
+            -moz-transform: scale(1.5);
+            transition: all 200ms ease-in;
+            transform: scale(1.1);
+        }
+        
+        body {
+            /*background: url(images/injection.jpg) no-repeat center center fixed;*/
+            background: #fff;
+            
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        
+        .login-frame {
+            box-shadow: 0px 0px 10px #000;
+            border-radius: 5px;
+            padding-bottom: 50px;
+        }
+        
+        @media all and (min-device-width: 320px) and (max-device-width: 1366px) {
+            .login-frame,
+            * [aria-labelledby='hide-on-mobile'] {
+                border-radius: 5px;
+                padding-bottom: 50px;
+                margin: 0 10px 0 10px;
+                border: 0 solid !important
+            }
+
+            .svg-content {
+                width: 300px;
+                height: 100%;
+            }
+        }
+
+        .svg-content { 
+            display: inline-block;
+            position: relative;
+            margin-left: 70px;
+            top: 0;
+            width: 
+            left: 0;
+        }
+        
+        input[type=email],
+        input[type=password] {
+            height: 50px;
+            background: transparent;
+            border: 1px solid #000000 !important;
+            color: #000;
+            -webkit-transition: all 0.30s ease-in-out;
+            -moz-transition: all 0.30s ease-in-out;
+            -ms-transition: all 0.30s ease-in-out;
+            -o-transition: all 0.30s ease-in-out;
+            outline: none;
+        }
+        
+        input[type=email]:focus,
+        input[type=password]:focus {
+            box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+            padding: 3px 0px 3px 20px;
+            margin: 5px 1px 3px 0px;
+            border: 1px solid rgba(81, 203, 238, 1);
+            background: transparent;
+            color: #000;
+        }
+        
+        label {
+            color: #000;
+        }
+        
+        a:nohover,
+        a:focus {
+            color: transparent;
+            text-decoration: none;
+            cursor: default;
+            !important
+        }
+        .svg-container { 
+            display: inline-block;
+            position: relative;
+            width: 100%;
+            /*padding-bottom: 100%; */
+            vertical-align: middle; 
+            /*overflow: hidden; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app">
+        <div class="padding">
+            <div class="navbar">
+                <div class="pull-center">
+                    <a href="#" class="navbar-brand">
+                        <!-- <div data-ui-include="'images/logo.svg'"></div> -->
+                        <!-- <img src="images/wemu.png" alt="." class=""> -->
+                        <span class="hidden-folded inline">WeMUNIZE</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-sm-3 col-md-3 col-lg-3 col-xs-12">                
+                <div class="center-block w-xxl w-auto-xs p-y-md text-center">
+                    <div class="p-a-md login-frame" aria-labelledby="hide-on-mobile">
+                        <form name="form" action="#">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="password" required>
+                            </div>
+                            <div class="m-b-md">
+                                <label class="md-switch">
+                  					<input type="checkbox"><i class="success"></i> Keep me signed in
+                				</label>
+                            </div>
+                            <button type="submit" class="btn btn-lg btn-block success p-x-lg">Sign in</button>
+                        </form>
+                        <!-- <div class="m-y">
+              				<a href="#" class="_600">Forgot password?</a>
+            			</div>
+            			<div>
+              				Do not have an account? 
+              				<a href="signup.html" class="text-primary _600">Sign up</a>
+            			</div> -->
+                    </div>
+                </div>                
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                <div class="svg-container">
+                    <div id="map" class="map-content svg-content"></div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container">
+            <div class="pull-center">
+                <img class="img img-responsive" style="display: block; margin: 0 auto;" height="50px" src="images/logo.jpg">
+            </div>
+        </div> -->
+    </div>
+
+    <!-- jQuery -->
+    <script src="libs/jquery/dist/jquery.js"></script>
+    <script src="libs/tether/dist/js/tether.min.js"></script>
+    <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
+
+    
+    <!-- endbuild -->
+    <!-- mapJS -->
+    <script src="js/jquery.qtip.min.js"></script>
+    <script src="js/jquery.smallipop.min.js"></script>
+    <script src="js/lodash.min.js"></script>
+    <script src="js/lga_maps.js"></script>
+    <script src="js/SOKOTO_populated.js"></script>
+    <script src="js/e-maplga-init-new.js"></script>
+    <script src="js/raphael-min.js"></script>
+    <script>
+
+        var $currentState = "SOKOTO";   
+        var $currentStateCode = "33";
+
+        function renderCategories(Categories, Colors) {
+            var container = jQuery(".win-legend"), categoriesElements;
+            var customClassRules = new Array(Categories.length);
+    
+            categoriesElements = Categories.map(function (item, index) {
+                var customClass = 'legend' + (index + 1);
+                customClassRules[index] = ['SPAN.' + customClass + ':before', ['background-color', Colors[index], true]]
+                //document.styleSheets[0].addRule('SPAN.' + customClass + ':before', 'background-color: ' + Colors[index] + ' !important;');
+            
+                var item = jQuery("<LI>").append(jQuery("<SPAN class=\"legend\"></SPAN>").addClass(customClass).text(item));
+            
+                return item;
+            });
+    
+            addStylesheetRules(customClassRules);
+    
+            container.html('').append(categoriesElements);
+        }
+
+        jQuery(function () {
+            renderCategories(lgaData["categories"], lgaData["colors"]);
+            loadSvgMap(mapSvgDataglobal2[$currentState], lgaData["categories"], lgaData["lgas"], lgaData["colors"]);
+        });
+    </script>
+
+    <script>
+        function addStylesheetRules(rules) {
+            var styleEl = document.createElement('style'),
+            styleSheet;
+
+            // Append style element to head
+            document.head.appendChild(styleEl);
+
+            // Grab style sheet
+            styleSheet = styleEl.sheet;
+
+            for (var i = 0, rl = rules.length; i < rl; i++) {
+                var j = 1, rule = rules[i], selector = rules[i][0], propStr = '';
+                // If the second argument of a rule is an array of arrays, correct our variables.
+                if (Object.prototype.toString.call(rule[1][0]) === '[object Array]') {
+                    rule = rule[1];
+                    j = 0;
+                }
+
+                for (var pl = rule.length; j < pl; j++) {
+                    var prop = rule[j];
+                    propStr += prop[0] + ':' + prop[1] + (prop[2] ? ' !important' : '') + ';\n';
+                }
+
+                // Insert CSS Rule
+                styleSheet.insertRule(selector + '{' + propStr + '}', styleSheet.cssRules.length);
+            }
+        }
+    </script>
+
+    <script>
+        var iframe = document.getElementById('map'),
+        iframedoc = iframe.contentDocument || iframe.contentWindow.document;
+        iframedoc.body.innerHTML = source, iframeinitialwidth = $('iframe').width();
+            
+        //*BELOW IS THE RESIZE CODE*//
+
+        jQuery.fn.fitToParent = function () {
+            this.each(function () {
+                var $iframe = jQuery(this);
+                var width = $iframe.width();
+                var height = $iframe.height();
+                var parentWidth = $iframe.parent().width();
+                var parentHeight = $iframe.parent().height();
+
+                var aspect = width / height;
+                var parentAspect = parentWidth / parentHeight;
+
+                if (aspect > parentAspect) {
+                    newWidth = parentWidth;
+                    newHeight = newWidth / aspect;
+                } else {
+                    newHeight = parentHeight;
+                    newWidth = newHeight * aspect;
+                }
+                //$iframe.width(newWidth);
+                //$iframe.height(newHeight);
+            });
+            var scaleFactor = newWidth/iframeinitialwidth;
+            $('iframe').css({'-webkit-transform': 'scale('+scaleFactor+')', '-webkit-transform-origin': '0 0'});
+           
+        };
+
+        $('.map-content').fitToParent();
+
+        $(window).resize(function () {
+            $('.svg-content').fitToParent();
+        });
+    </script>
+
+</body>
+
+</html>
