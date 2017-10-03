@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Login: WeMunize</title>
+    <title>Login: WeMUNIZE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -144,6 +144,34 @@
             vertical-align: middle; 
             /*overflow: hidden; */
         }
+        .svg-content {
+          display: block;
+          margin: 0 auto;
+        }
+
+        .svg-content svg path {
+          -moz-transition-property: opacity;
+          -o-transition-property: opacity;
+          -webkit-transition-property: opacity;
+          transition-property: opacity;
+          -moz-transition-duration: 0.5s;
+          -o-transition-duration: 0.5s;
+          -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+          -moz-transition-timing-function: ease;
+          -o-transition-timing-function: ease;
+          -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+        }
+        .svg-content svg path:hover, .svg-content svg path:focus {
+          cursor: pointer;
+        }
+        .svg-content svg path:hover, .map_svg svg:focus,
+        .svg-content svg path:focus {
+            /*opacity: 0.25;*/
+            fill: #22b66e;
+            
+        }
         
     </style>
 </head>
@@ -155,10 +183,10 @@
                     <div class="container">
                         <div class="col-md-6">
                             <h2 class="hidden-folded inline">Sokoto State</h2>
-                            <h5>WeMUNIZE - Increasing Routine Immunization Coverage</h5>    
+                            <h5>Increasing Routine Immunization Coverage</h5>    
                         </div>
                         <div class="col-md-6">
-                            <img src="images/logo.jpg" class="pull-right">
+                            <img src="images/usaid.png" style="width: 400px" class="pull-right">
                         </div>
                     </div>
                 </div>
@@ -169,7 +197,10 @@
                     <div class="center-block  w-auto-xs p-y-md text-center">
                         <div class="p-a-md login-frame" aria-labelledby="hide-on-mobile">
                             <form name="form" action="#">
-                                <p style="border-bottom: solid 1px #777; text-align: left;">WeMUNIZE <br><span style="font-size: 12px;">USAID-funded mHealth</span></p>
+                                <div style="border-bottom: solid 1px #777; margin: 0 0 20px 0;">
+                                    <p style="line-height: 1px; text-align: left;">WeMUNIZE </p>
+                                    <p style="line-height: 2px; text-align: left;"><span style="font-size: 12px;">USAID-funded mHealth</span></p>
+                                </div>                                
                                 <div class="form-group">
                                     <input type="email" class="form-control" placeholder="Email" required>
                                 </div>
@@ -211,7 +242,7 @@
                     <span class="text-center center-block" style="font-size: 14px;">Let's think through this together. Talk to us! <a href="https://twitter.com/intent/tweet/?text=@BlackSWTech" class="twitter" target="_blank"><i class="fa fa-twitter"></i>Twitter</a></span> -->
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
-                    <div class="svg-container">
+                    <div class="svg-container center">
                         <div id="map" class="map-content svg-content"></div>
                     </div>
                 </div>
