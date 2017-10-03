@@ -18,7 +18,8 @@
 
     <!-- style -->
     <link rel="stylesheet" href="css/glyphicons/glyphicons.css" type="text/css" />
-    <!-- <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" type="text/css" /> -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" type="text/css" />
     <!-- <link rel="stylesheet" href="css/material-design-icons/material-design-icons.css" type="text/css" /> -->
     <!-- <link rel="stylesheet" href="css/ionicons/css/ionicons.min.css" type="text/css" /> -->
     <!-- <link rel="stylesheet" href="css/simple-line-icons/css/simple-line-icons.css" type="text/css" /> -->
@@ -61,7 +62,7 @@
         body {
             /*background: url(images/injection.jpg) no-repeat center center fixed;*/
             background: #fff;
-            
+            font-family: 'Raleway', sans-serif;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -103,7 +104,7 @@
         
         input[type=email],
         input[type=password] {
-            height: 50px;
+            /*height: 50px;*/
             background: transparent;
             /*border: 1px solid #000000 !important;*/
             color: #000;
@@ -116,7 +117,7 @@
         
         input[type=email]:focus,
         input[type=password]:focus {
-            box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+            /*box-shadow: 0 0 5px rgba(81, 203, 238, 1);*/
             padding: 3px 0px 3px 20px;
             margin: 5px 1px 3px 0px;
             /*border: 1px solid rgba(81, 203, 238, 1);*/
@@ -148,13 +149,12 @@
 </head>
 
 <body>
-    <section class="abs">
         <div class="row">
-            <div class="padding">
+            <div class="padding" style="padding: 0 2px;">
                 <div class="navbar">
                     <div class="container">
-                        <h2 class="hidden-folded inline">WeMUNIZE - <small style="font-size: 20px;">SOKOTO STATE</small></h2>
-                        <h4>USAID-funded mHealth</h4>
+                        <h2 class="hidden-folded inline">Sokoto State</h2>
+                        <h5>WeMUNIZE - Increasing Routine Immunization Coverage</h5>
                         <hr>
                     </div>
                 </div>
@@ -164,18 +164,19 @@
                     <div class="center-block  w-auto-xs p-y-md text-center">
                         <div class="p-a-md login-frame" aria-labelledby="hide-on-mobile">
                             <form name="form" action="#">
+                                <p style="border-bottom: solid 1px #777; text-align: left;">WeMUNIZE <br><span style="font-size: 12px;">USAID-funded mHealth</span></p>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Username" required>
+                                    <input type="email" class="form-control" placeholder="Email" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control" placeholder="password" required>
+                                    <input type="password" class="form-control" placeholder="Password" required>
                                 </div>
                                 <div class="m-b-md">
                                     <label class="md-switch">
                       					<input type="checkbox" style="font-size: 12px;"><i class="success"></i> Keep me signed in
                     				</label>
                                 </div>
-                                <button type="submit" class="btn btn-lg btn-block success p-x-lg">Sign in</button>
+                                <button type="submit" class="btn btn-block success p-x-lg">Sign In</button>
                             </form>
                             <!-- <div class="m-y">
                   				<a href="#" class="_600">Forgot password?</a>
@@ -190,17 +191,19 @@
                     <div class="center-block w-auto-xs p-y-md">
                         <div class="p-a-md login-frame" aria-labelledby="hide-on-mobile">
                             <div class="_map-legend">
-                                <span>Source</span>
+                                <span style="font-size: 14px;">Source of Map Statistics</span>
                                 <hr>
-                                <span><i>*DVD-MT Sokoto 2016</i></span>
+                                <span style="font-size: 14px;"><i>DVD-MT Sokoto 2016</i></span>
                                 <!-- <ul class="win-legend"></ul> -->                                       
-                                <div style="margin-top: 30px; auto; float:none;">
+                                <!-- <div style="margin-top: 30px; auto; float:none;">
                                     <hr>
                                     Let's think through this together. Talk to us! <a href="https://twitter.com/intent/tweet/?text=@BlackSWTech" class="twitter" target="_blank"><i class="fa fa-twitter"></i>Twitter</a>
-                                </div>
+                                </div> -->
                             </div>                            
                         </div>
                     </div>
+
+                    <span class="text-center center-block" style="font-size: 14px;">Let's think through this together. Talk to us! <a href="https://twitter.com/intent/tweet/?text=@BlackSWTech" class="twitter" target="_blank"><i class="fa fa-twitter"></i>Twitter</a></span>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
                     <div class="svg-container">
@@ -209,21 +212,18 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="rel">
         <footer>
             <div class="_copy">
                 <div class="container">
                     <div class="row">
                         <div class="copyright text-center">
-                            <!-- &copy; Black Swan Tech Ltd 2017. All Rights Reserved -->
-                            <img class="img" src="images/logo.jpg" height="50px">
+                            Let's think through this together. Talk to us! <a href="https://twitter.com/intent/tweet/?text=@BlackSWTech" class="twitter" target="_blank"><i class="fa fa-twitter"></i>Twitter</a><br>
+                            <img src="images/logo.jpg">
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
-    </section>
 
     <!-- jQuery -->
     <script src="libs/jquery/dist/jquery.js"></script>

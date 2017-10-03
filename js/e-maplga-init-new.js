@@ -25,7 +25,7 @@ var loadSvgMap = function(paths, Categories, LgaData, Colors){
         
     };
 
-	var mapWidth = 750;
+	var mapWidth = 700;
 	var mapHeight = 500;
 	var maxX = 0, maxY = 0, minX = 0, minY = 0;
 	var mapData = {};
