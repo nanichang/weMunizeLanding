@@ -185,12 +185,12 @@
             <div class="padding" style="padding: 5px 2px;">
                 <div class="navbar">
                     <div class="container">
-                        <div class="col-md-6">
+                        <div class="col-md-7">
                             <h2 class="hidden-folded inline">Sokoto State</h2>
                             <h5>Increasing Routine Immunization Coverage</h5>    
                         </div>
-                        <div class="col-md-6">
-                            <img src="images/usaid.png" style="width: 400px" class="pull-right">
+                        <div class="col-md-5">
+                            <img src="images/usaid.png" class="img img-responsive pull-right">
                         </div>
                     </div>
                 </div>
@@ -234,16 +234,10 @@
                                 <span style="font-size: 14px;">Source of Map Statistics</span>
                                 <hr>
                                 <span style="font-size: 14px;"><i>DVD-MT Sokoto 2016</i></span>
-                                <!-- <ul class="win-legend"></ul> -->                                       
-                                <!-- <div style="margin-top: 30px; auto; float:none;">
-                                    <hr>
-                                    Let's think through this together. Talk to us! <a href="https://twitter.com/intent/tweet/?text=@BlackSWTech" class="twitter" target="_blank"><i class="fa fa-twitter"></i>Twitter</a>
-                                </div> -->
+                                <!-- <ul class="win-legend"></ul> -->
                             </div>                            
                         </div>
                     </div>
-<!-- 
-                    <span class="text-center center-block" style="font-size: 14px;">Let's think through this together. Talk to us! <a href="https://twitter.com/intent/tweet/?text=@BlackSWTech" class="twitter" target="_blank"><i class="fa fa-twitter"></i>Twitter</a></span> -->
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
                     <div class="svg-container center">
@@ -338,49 +332,6 @@
             }
         }
     </script>
-
-    <script>
-        var source = document.getElementById('map');
-
-        var iframe = document.getElementById('map'),
-        iframedoc = iframe.contentDocument || iframe.contentWindow.document;
-        iframedoc.body.innerHTML = source, iframeinitialwidth = $('div').width();
-            
-        //*BELOW IS THE RESIZE CODE*//
-
-        jQuery.fn.fitToParent = function () {
-            this.each(function () {
-                var $iframe = jQuery(this);
-                var width = $iframe.width();
-                var height = $iframe.height();
-                var parentWidth = $iframe.parent().width();
-                var parentHeight = $iframe.parent().height();
-
-                var aspect = width / height;
-                var parentAspect = parentWidth / parentHeight;
-
-                if (aspect > parentAspect) {
-                    newWidth = parentWidth;
-                    newHeight = newWidth / aspect;
-                } else {
-                    newHeight = parentHeight;
-                    newWidth = newHeight * aspect;
-                }
-                //$iframe.width(newWidth);
-                //$iframe.height(newHeight);
-            });
-            var scaleFactor = newWidth/iframeinitialwidth;
-            $('div').css({'-webkit-transform': 'scale('+scaleFactor+')', '-webkit-transform-origin': '0 0'});
-           
-        };
-
-        $('.map-content').fitToParent();
-
-        $(window).resize(function () {
-            $('.map-content').fitToParent();
-        });
-    </script>
-
 </body>
 
 </html>
