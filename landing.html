@@ -177,6 +177,12 @@
         .svg-content svg path:focus {
             fill: #22b66e;            
         }
+
+        div.scroll {
+            /*background-color: #333;*/
+            overflow: auto;
+            white-space: nowrap;
+        }
         
     </style>
 </head>
@@ -241,7 +247,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
-                    <div class="svg-container center">
+                    <div class="svg-container center scroll">
                         <div id="map" class="map-content svg-content"></div>
                     </div>
                 </div>
