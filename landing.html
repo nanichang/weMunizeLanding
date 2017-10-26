@@ -75,7 +75,7 @@
             /*padding-bottom: 50px;*/
         }
         
-        @media all and (min-device-width: 320px) and (max-device-width: 1366px) {
+        @media all and (min-device-width: 320px) and (max-device-width: 760px) {
             .login-frame,
             * [aria-labelledby='hide-on-mobile'] {
                 border-radius: 5px;
@@ -96,6 +96,11 @@
               display: block;
               margin: 0 auto;
               width: 80%;
+            }
+
+            div.scroll {
+                overflow-x: auto;
+                white-space: nowrap;
             }
         }
 
@@ -176,13 +181,7 @@
         .svg-content svg path:hover, .map_svg svg:focus,
         .svg-content svg path:focus {
             fill: #22b66e;            
-        }
-
-        div.scroll {
-            overflow-x: auto;
-            white-space: nowrap;
-        }
-        
+        }        
     </style>
 </head>
 
